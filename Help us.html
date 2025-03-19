@@ -4,117 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help us</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .navbar a {
+            color: gold;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        .Texthelp, .texthelp2 {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #1f1f1f;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+        }
+
+        h1, h3 {
+            color: gold;
+        }
+
+        p, li {
+            color: #e0e0e0;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .help1, .help2 {
+            margin-top: 30px;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .help2 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .help2 li {
+            background-color: gold;
+            color: #121212;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .help2 li:hover {
+            background-color: #fff;
+            color: #121212;
+        }
+
+       
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: gold;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+        }
+
+        #backToTop:hover {
+            background-color: #fff;
+        }
+
+       
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .Texthelp, .texthelp2 {
+                width: 95%;
+                padding: 20px;
+            }
+
+            #backToTop {
+                bottom: 15px;
+                right: 15px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="Help us.html">help us</a>
+        <a href="Help us.html">Help us</a>
         <a href="Support us.html">Support us</a>
-</div>
-<div class="Texthelp">
-    <br>
-    <br>
-    <h1>Tips for Writing Vehicle Descriptions</h1>
-    <p>You can spend money on ads and marketing, but if the vehicle description isn’t compelling, it’s money that isn’t well-spent. The tips below will help you attract the best buyers with well-written car descriptions.</p>
-    <br>
-    <ul>
-        <li>Always be 100% honest.</li>
-        <li>Know your target market. For instance, if you're planning to sell cars to first-time buyers, it would be wise to highlight the fact that certain vehicle types are some of the best cars for teens.</li>
-        <li>Use verbiage that describes the target market.
-</li>
-        <li>Highlight important details about the cars condition, citing the vehicle’s history report ‍
-</li>
-        <li>Describe how the vehicle looks and runs.
-</li>
-        <li>Prioritize the features.
-</li>
-        <li>Prioritize the features.
-</li>
-        <li>Make the car description easy to read.
-</li>
-        <li>Provide details without being longwinded.
-</li>
-        <li>Pretend youre talking to someone about the vehicle.
-</li>
-        <li>Tell the vehicles story.
-</li>
-<li>Avoid using passive words.
-</li>
-<li>Avoid using industry jargon.
-</li>
-<li>Use buzz words that buyers understand.
+    </div>
 
-</li>
-<li>Always edit what you’ve written.
-</li>
-<li>Read it out loud to improve readability online.
-</li>
-    </ul>
-    <br>
-    <h3>Always be 100% honest. Bait and switch tactics might get a buyer to the dealership, but they won’t help you sell a vehicle. At the end of the day, sales are what actually matter. You need to be able to back up every claim in the description.
- </h3>
- <h3>Know your target market. Who is it that’s most likely to be interested in the type of a vehicle you’re selling? What kind of lifestyle do they lead? What matters most to them about a vehicle? What features attract them to a specific make/model? The answers to these questions will help you write for the buyers who are interested in what youre selling.</h3>
- <h3>Use verbiage that describes the target market. Directly mentioning a type of buyer in the description can be highly effective. An example would be stating that a van is a “safe and comfortable option for families.”
-</h3>
-<h3>Highlight important details about the vehicle’s history. These are the key details that many buyers want to know before they seriously consider purchasing a vehicle. You can also provide buyers with vehicle history reports from Carfax or True360. The most important vehicle history information to use in the description includes:
+    <div class="Texthelp">
+        <h1>Tips for Writing Vehicle Descriptions</h1>
+        <p>
+            You can spend money on ads and marketing, but if the vehicle description isn’t compelling, it’s money that isn’t well-spent. The tips below will help you attract the best buyers with well-written car descriptions.
+        </p>
+        <ul>
+            <li>Always be 100% honest.</li>
+            <li>Know your target market.</li>
+            <li>Use verbiage that describes the target market.</li>
+            <li>Highlight important details about the car's condition.</li>
+            <li>Describe how the vehicle looks and runs.</li>
+            <li>Prioritize the features.</li>
+            <li>Make the car description easy to read.</li>
+            <li>Provide details without being longwinded.</li>
+            <li>Pretend you're talking to someone about the vehicle.</li>
+            <li>Tell the vehicle's story.</li>
+        </ul>
 
-</h3>
-<h1>Vehicle Description Examples</h1>
-<p>Here are a few excellent vehicle description examples from listings on ACV Auctions. While each car for sale description example is directed at wholesale buyers, the best practices that are used also apply when selling a car on the lot to an everyday buyer.</p>
-<br>
-<br>
-</div>
-<div class="texthelp2">
-    <div class="help1">
-<h3>Vehicle Description Example:
-</h3>
-<ol>
-    <li>2015 Audi Q5
-    </li>
-<li>Odometer - 52,315 miles
-</li>
-<li>Fuel Economy - 27.0/34.0 mpg City/Hwy
-</li>
-<li>Exterior Color - Alabaster Silver Metallic
-</li>
-<li>Interior Color - Gray
-</li>
-<li>Body - SUV
-</li>
-<li>Seating - 5 seats
-</li>
-<li>Transmission - Continuously Variable Automatic
-</li>
-<li>Drivetrain - Front-wheel
-</li>
-<li>Engine - 2.4L I-4 cylinder
-</li>
-</ol>
-<br>
-</div>
-<div class="help2">
-<h3>KEY FEATURES</h3>
-<ul>
-    <li>Leather Upholstery
-</li>
-    <li>Automatic Temperature Control
-</li>
-    <li>Wireless Phone Connectivity
-</li>
-    <li>Exterior Parking Camera Right
-</li>
-    <li>Camera Rear
-</li>
-    <li>Dual Zone A/C Up Front
-</li>
-    <li>Speed-Sensitive Windshield Wipers
-</li>
-    <li>Power Moonroof
-</li>
-</ul>
-</div>
+        <h1>Vehicle Description Examples</h1>
+        <p>Here are a few excellent vehicle description examples from listings on ACV Auctions:</p>
+    </div>
+
+    <div class="texthelp2">
+        <div class="help1">
+            <h3>Vehicle Description Example:</h3>
+            <ol>
+                <li>2015 Audi Q5</li>
+                <li>Odometer - 52,315 miles</li>
+                <li>Fuel Economy - 27.0/34.0 mpg City/Hwy</li>
+                <li>Exterior Color - Alabaster Silver Metallic</li>
+                <li>Interior Color - Gray</li>
+                <li>Body - SUV</li>
+                <li>Seating - 5 seats</li>
+                <li>Transmission - Continuously Variable Automatic</li>
+                <li>Drivetrain - Front-wheel</li>
+                <li>Engine - 2.4L I-4 cylinder</li>
+            </ol>
+        </div>
+
+        <div class="help2">
+            <h3>KEY FEATURES</h3>
+            <ul>
+                <li>Leather Upholstery</li>
+                <li>Automatic Temperature Control</li>
+                <li>Wireless Phone Connectivity</li>
+                <li>Exterior Parking Camera Right</li>
+                <li>Camera Rear</li>
+                <li>Dual Zone A/C Up Front</li>
+                <li>Speed-Sensitive Windshield Wipers</li>
+                <li>Power Moonroof</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">⬆️ Top</button>
+
+    <script>
+        
+        window.onscroll = function() {
+            const button = document.getElementById("backToTop");
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+       
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>
