@@ -5,75 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxMobility</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: gold;
+    color: #121212;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+.navbar {
+    display: flex;
+    background-color: #000;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: gold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    position: relative;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.8);
+}
+
+.card {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; 
+    border-bottom: 4px solid gold;
+}
+
+.textsale {
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: gold;
+}
+
+.brand-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: gold;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: none;
+    text-align: center;
+}
+
+.box:hover .brand-label {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .textsale {
+        font-size: 1.1rem; 
+    }
+
+    .card {
+        height: 200px;
+    }
+
+    .brand-label {
+        font-size: 0.9rem;
+        padding: 3px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
 </head>
 <body>
-<div class="navbar">
- <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="Help us.html">help us</a>
-  <a href="Support us.html">Support us</a>
-</div>
-<div class="Logo">
-  <img src="logo.png" alt="" class="logo">
-</div>
-<div class="container">
-  <div class="box"><img src="a1.jpg" alt="" class="card">
-  <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi A1 Sportback
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="a3.jpg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi A3 Sportback
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="a7.jpg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi A5 Sportback
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="a8.jpg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi A6 / A7 Sportback
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="pic1.jpeg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi RS4 Avant
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="pic2.jpeg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi RS6 Avant
-    </h1>
-  </div>
-  </div>
-  <div class="box"><img src="pic3.jpeg" alt="" class="card">
-    <div class="textsale">
-    <h1>FOR SALE
-<br>
-Audi S4 / S5
-    </h1>
-  </div>
-  </div>
-</div>
+    <div class="hero">
+        <h1>Welcome to LuxMobility</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Help us.html">Help</a>
+        <a href="Support us.html">Support</a>
+    </div>
+
+    <div class="container" id="cars">
+        <div class="box" onclick="location.href='a1-details.html'">
+            <img src="a1.jpg" alt="Audi A1 Sportback" class="card">
+            <div class="brand-label">Audi A1 Sportback</div>
+            
+        </div>
+        <div class="box" onclick="location.href='a3-details.html'">
+            <img src="a3.jpg" alt="Audi A3 Sportback" class="card">
+            <div class="brand-label">Audi A3 Sportback</div>
+            
+        </div>
+        <div class="box" onclick="location.href='a5-details.html'">
+            <img src="a7.jpg" alt="Audi A5 Sportback" class="card">
+            <div class="brand-label">Audi A5 Sportback</div>
+            
+        </div>
+        <div class="box" onclick="location.href='a6-details.html'">
+            <img src="a8.jpg" alt="Audi A6 / A7 Sportback" class="card">
+            <div class="brand-label">Audi A6 / A7 Sportback</div>
+            
+        </div>
+        <div class="box" onclick="location.href='rs4-details.html'">
+            <img src="pic1.jpeg" alt="Audi RS4 Avant" class="card">
+            <div class="brand-label">Audi RS4 Avant</div>
+            
+        </div>
+        <div class="box" onclick="location.href='rs6-details.html'">
+            <img src="pic2.jpeg" alt="Audi RS6 Avant" class="card">
+            <div class="brand-label">Audi RS6 Avant</div>
+            
+        </div>
+        <div class="box" onclick="location.href='s4-details.html'">
+            <img src="pic3.jpeg" alt="Audi S4 / S5" class="card">
+            <div class="brand-label">Audi S4 / S5</div>
+            
+        </div>
+    </div>
 </body>
 </html>
+<script>
+window.onload = function() {
+    const fadeMessage = document.createElement('div');
+    fadeMessage.innerText = "Welcome to LuxMobility";
+    fadeMessage.style.position = "fixed";
+    fadeMessage.style.top = "0";
+    fadeMessage.style.left = "0";
+    fadeMessage.style.width = "100%";
+    fadeMessage.style.height = "100%";
+    fadeMessage.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+    fadeMessage.style.color = "gold";
+    fadeMessage.style.display = "flex";
+    fadeMessage.style.alignItems = "center";
+    fadeMessage.style.justifyContent = "center";
+    fadeMessage.style.fontSize = "4rem";
+    fadeMessage.style.fontWeight = "bold";
+    fadeMessage.style.letterSpacing = "2px";
+    fadeMessage.style.zIndex = "1000";
+    fadeMessage.style.opacity = "1";
+    fadeMessage.style.boxShadow = "0 0 15px rgba(255, 215, 0, 0.8)";
+
+    document.body.appendChild(fadeMessage);
+
+    setTimeout(() => {
+        let opacity = 1;
+        const fadeOut = setInterval(() => {
+            opacity -= 0.05;
+            fadeMessage.style.opacity = opacity.toString();
+            if (opacity <= 0) {
+                clearInterval(fadeOut);
+                fadeMessage.remove();
+            }
+        }, 100);
+    }, 1500);
+};
+</script>
